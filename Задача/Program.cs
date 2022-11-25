@@ -20,3 +20,11 @@ for (int i = 0; i < Array.Length; i++)
 }
 }
 
+void PrintArray(string[] Array)
+{
+    Console.Write("Массив: ");
+    for (int i = 0; i < Array.Length; i++)
+    {
+        Console.Write(Array[i] + " ");
+    }
+}
