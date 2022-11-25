@@ -28,3 +28,23 @@ void PrintArray(string[] Array)
         Console.Write(Array[i] + " ");
     }
 }
+
+void PrintnewArray(string[] newArray)
+{
+int j = 0;
+Console.Write("Новый массив: ");
+for (int i = 0; i < Array.Length; i++)
+{
+    if (Array[i].Length <= 3)
+    {
+        newArray[j] = Array[i];
+        Console.Write(newArray[j] + " ");
+    } 
+    j++;
+}
+}
+
+FillArray(Array);
+PrintArray(Array);
+Console.WriteLine();
+PrintnewArray(newArray);
